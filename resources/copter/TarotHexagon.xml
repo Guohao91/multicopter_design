@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" ?>
+<copter>
+  <plate file="plate.obj" density="1.4">
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+    </instance>
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <rotate rpy="0 0 -45"/>
+    </instance>
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <rotate rpy="0 0 -90"/>
+    </instance>
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <rotate rpy="0 0 45"/>
+    </instance>
+    
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <translate xyz="0 0 -0.048"/>
+    </instance>
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <translate xyz="0 0 -0.048"/>
+      <rotate rpy="0 0 -45"/>
+    </instance>
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <translate xyz="0 0 -0.048"/>
+      <rotate rpy="0 0 -90"/>
+    </instance>
+    <instance size="0.193 0.08">
+      <!-- Lift by 0.1m to avoid penetrating the ground. -->
+      <translate xyz="0 0 -0.1"/>
+      <translate xyz="0 0 -0.048"/>
+      <rotate rpy="0 0 45"/>
+    </instance>
+  </plate>
+  
+  <battery file="battery.obj" density="14000" capacity="3500"> 
+    <translate xyz="0 0 -0.1"/>
+    <translate xyz="0 0 0.001"/>
+    <translate xyz="0 -0.045 0.025"/>
+  </battery>
+
+  <electronics file="electronics.obj" density="16000.0">   
+    <!-- The electronic device is placed on top of the upper plate. -->
+    <translate xyz="0 0 -0.145"/>
+    <!-- Lift by 0.01 more because the mesh itself has thickness. -->
+    <translate xyz="0 0 -0.01"/>
+  </electronics>
+
+
+  <tube file="tube.obj" density="1.2">
+    <instance length="0.31">
+      <translate xyz="0 0 -0.1"/>
+      <!-- 0.0012 is half of the thickness of a plate. -->
+      <translate xyz="0 0 -0.0012"/>
+      <!-- 0.0228 is half of the size of a connector. -->
+      <translate xyz="0 0 -0.0228"/>
+      <translate xyz="0.2 0 0"/>
+      <rotate rpy="0 0 30"/>
+    </instance>
+    <instance length="0.31">
+      <translate xyz="0.2 0 -0.124"/>
+      <rotate rpy="0 0 90"/>
+    </instance>
+    <instance length="0.31">
+      <translate xyz="0.2 0 -0.124"/>
+      <rotate rpy="0 0 150"/>
+    </instance>
+    <instance length="0.31">
+      <translate xyz="0.2 0 -0.124"/>
+      <rotate rpy="0 0 -30"/>
+    </instance>
+    <instance length="0.31">
+      <translate xyz="0.2 0 -0.124"/>
+      <rotate rpy="0 0 -90"/>
+    </instance>
+    <instance length="0.31">
+      <translate xyz="0.2 0 -0.124"/>
+      <rotate rpy="0 0 -150"/>
+    </instance>
+    <instance length="0.21">-
+      <translate xyz="0.06 0 -0.124"/>
+      <rotate rpy="0 0 90"/>
+      <rotate rpy="60 0 0"/>
+    </instance>
+    <instance length="0.21">
+      <translate xyz="0.06 0 -0.124"/>
+      <rotate rpy="0 0 -90"/>
+      <rotate rpy="-60 0 0"/>
+    </instance>
+    <instance length="0.26">
+      <translate xyz="0 0 0.1"/>
+      <translate xyz="0 0.19 0"/>
+    </instance>
+    <instance length="0.26">
+      <translate xyz="0 0 0.1"/>
+      <translate xyz="0 -0.19 0"/>
+    </instance>
+  </tube>
+
+  <round_connector file="connector.obj" density="1.0">
+    <instance>
+      <translate xyz="0.07 0 -0.124"/>
+      <rotate rpy="0 0 30"/>
+    </instance>
+    <instance>
+      <translate xyz="0.07 0 -0.124"/>
+      <rotate rpy="0 0 90"/>
+    </instance>
+    <instance>
+      <translate xyz="0.07 0 -0.124"/>
+      <rotate rpy="0 0 150"/>
+    </instance>
+    <instance>
+      <translate xyz="0.07 0 -0.124"/>
+      <rotate rpy="0 0 -30"/>
+    </instance>
+    <instance>
+      <translate xyz="0.07 0 -0.124"/>
+      <rotate rpy="0 0 -90"/>
+    </instance>
+    <instance>
+      <translate xyz="0.07 0 -0.124"/>
+      <rotate rpy="0 0 -150"/>
+    </instance>
+    <instance>
+      <translate xyz="-0.02 0 -0.124"/>
+      <rotate rpy="0 0 90"/>
+      <rotate rpy="60 0 0"/>
+    </instance>
+    <instance>
+      <translate xyz="-0.02 0 -0.124"/>
+      <rotate rpy="0 0 -90"/>
+      <rotate rpy="-60 0 0"/>
+    </instance>
+    <instance>
+      <translate xyz="0 0 0.1"/>
+      <translate xyz="0 0.19 0"/>
+    </instance>
+    <instance>
+      <translate xyz="0 0 0.1"/>
+      <translate xyz="0 -0.19 0"/>
+    </instance>
+
+    <instance>
+      <translate xyz="0.35 0 -0.124"/>
+      <rotate rpy="0 0 30"/>
+    </instance>
+    <instance>
+      <translate xyz="0.35 0 -0.124"/>
+      <rotate rpy="0 0 90"/>
+    </instance>
+    <instance>
+      <translate xyz="0.35 0 -0.124"/>
+      <rotate rpy="0 0 150"/>
+    </instance>
+    <instance>
+      <translate xyz="0.35 0 -0.124"/>
+      <rotate rpy="0 0 -30"/>
+    </instance>
+    <instance>
+      <translate xyz="0.35 0 -0.124"/>
+      <rotate rpy="0 0 -90"/>
+    </instance>
+    <instance>
+      <translate xyz="0.35 0 -0.124"/>
+      <rotate rpy="0 0 -150"/>
+    </instance>
+  </round_connector>
+
+  <propeller file="propeller_10inch.obj"/>
+
+  <motor file="motor.obj" density="4000" measurement="motor_12inch_prop.txt" propeller_height="0.019">
+    <instance spin_dir="cw">
+      <!-- Location of its parent connector. -->
+      <translate xyz="0.35 0 -0.124"/>
+      <!-- Half size of its parent connector. -->
+      <translate xyz="0 0 -0.0228"/>
+      <!-- 0.018 is the distance between the bottom surface and the center of the motor. -->
+      <translate xyz="0 0 -0.018"/>
+      <rotate rpy="0 0 30"/>
+    </instance>
+    <instance spin_dir="ccw">
+      <translate xyz="0.35 0 -0.124"/>
+      <translate xyz="0 0 -0.0228"/>
+      <translate xyz="0 0 -0.018"/>
+      <rotate rpy="0 0 90"/>
+    </instance>
+    <instance spin_dir="cw">
+      <translate xyz="0.35 0 -0.124"/>
+      <translate xyz="0 0 -0.0228"/>
+      <translate xyz="0 0 -0.018"/>
+      <rotate rpy="0 0 150"/>
+    </instance>
+    <instance spin_dir="ccw">
+      <translate xyz="0.35 0 -0.124"/>
+      <translate xyz="0 0 -0.0228"/>
+      <translate xyz="0 0 -0.018"/>
+      <rotate rpy="0 0 -30"/>
+    </instance>
+    <instance spin_dir="cw">
+      <translate xyz="0.35 0 -0.124"/>
+      <translate xyz="0 0 -0.0228"/>
+      <translate xyz="0 0 -0.018"/>
+      <rotate rpy="0 0 -90"/>
+    </instance>
+    <instance spin_dir="ccw">
+      <translate xyz="0.35 0 -0.124"/>
+      <translate xyz="0 0 -0.0228"/>
+      <translate xyz="0 0 -0.018"/>
+      <rotate rpy="0 0 -150"/>
+    </instance>
+  </motor>
+
+</copter>
